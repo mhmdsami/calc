@@ -1,6 +1,7 @@
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator")
 const equals = document.querySelector(".equals")
+const clearButton = document.querySelector(".clear");
 const mainScreen = document.querySelector("h3");
 const secondaryScreen = document.querySelector("h5");
 
@@ -43,3 +44,9 @@ equals.addEventListener("click", () => {
         mainScreen.innerText = "ERROR";
     }
 });
+
+clearButton.addEventListener("click", () => {
+    mainScreen.innerText = null;
+    secondaryScreen.innerText = null;
+    expression = '';
+})
