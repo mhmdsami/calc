@@ -20,14 +20,16 @@ numbers.forEach(number => {
 
 operators.forEach(operator => {
     operator.addEventListener("click", () => {
-        if(mainScreen.innerText != ''){
-            expression = mainScreen.innerText;
-            secondaryScreen.innerText = mainScreen.innerText;
-            mainScreen.innerText = null;
-        }
-        if(["+", "-", "*", "/"].indexOf(secondaryScreen.innerText.split(-2)) == -1){
-            expression += operator.innerHTML;
-            secondaryScreen.append(operator.innerHTML);
+        if(secondaryScreen.innerText != ""){
+            if(secondaryScreen.innerText.includes("=")){
+                expression = mainScreen.innerText;
+                secondaryScreen.innerText = mainScreen.innerText;
+                mainScreen.innerText = null;
+            }
+            if(['+', '-', '*', '/'].indexOf(secondaryScreen.innerText.split("").slice(-1)[0]) == -1){
+                expression += operator.innerHTML;
+                secondaryScreen.append(operator.innerHTML);
+            }
         }
     });
 });
