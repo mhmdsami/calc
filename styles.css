@@ -27,14 +27,16 @@
 }
 
 .screen{
+    margin: 0.7em;
     border: 1px solid black;
     border-radius: 10px;
     background-color: whitesmoke;
-    height: 25%;
+    height: 30%;
 }
 
 .buttons{
-    height: 75%;
+    padding: 0 0.5em 0.7em;
+    height: 70%;
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
@@ -43,9 +45,12 @@
     font-weight: bold;
     border: 1px solid black;
     font-size: large;
+    border-radius: 10px;
+    margin: 0.2em;
 }
 
 .clear{
+    padding: 0.2em 0;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -62,7 +67,7 @@
 h5, h3{
     cursor: copy;
     text-align: end;
-    margin: 20px;
+    margin: 15px;
 }
 
 footer{
