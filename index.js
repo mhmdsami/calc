@@ -1,3 +1,5 @@
+const root = document.documentElement;
+const themeSelector = document.querySelector("select");
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
 const equals = document.querySelector(".equals");
@@ -5,6 +7,20 @@ const clearButton = document.querySelector(".clear");
 const deleteButton = document.querySelector(".delete");
 const mainScreen = document.querySelector("h3");
 const secondaryScreen = document.querySelector("h5");
+
+function setTheme(theme){
+    root.style.setProperty("--bg-color", theme[0]);
+    root.style.setProperty("--primary-color", theme[1]);
+    root.style.setProperty("--primary-highlight", theme[2]);
+    root.style.setProperty("--secondary-color", theme[3]);
+    root.style.setProperty("--font-color", theme[4]);
+}
+
+let themes = {
+    default: ["#ffffff", "#EEEEEE", "#ffffff", "#2C272E", "#2C272E"],
+    justBlack: ["#212529", "#343a40", "#212529", "#495057", "#adb5bd"]
+}
+
 
 let expression = "";
 numbers.forEach(number => {
@@ -63,4 +79,9 @@ deleteButton.addEventListener("click", () => {
         secondaryScreen.innerText = null;
         expression = "";
     }
+});
+
+themeSelector.addEventListener("change", () => {
+    if(themeSelector.value == "default") setTheme(themes.default);
+    else if(themeSelector.value == "justblack") setTheme(themes.justBlack);
 });
