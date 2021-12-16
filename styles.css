@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
-    --bg-color: white;
-    --primary-color: #EEEEEE;
-    --primary-highlight: white;
+    --bg-color: #ffffff;
+    --primary-color: #eeeeee;
+    --primary-highlight: #ffffff;
     --secondary-color: #2C272E;
     --font-color: #2C272E;
 }
@@ -12,6 +12,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 
 .themes{
@@ -47,9 +49,12 @@
     height: 70%;
     display: grid;
     grid-template-columns: repeat(4, 25%);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
 }
 
 .buttons button{
+    background-color: var(--primary-color);
     font-weight: bold;
     border: 1px solid var(--secondary-color);
     font-size: large;
@@ -76,6 +81,7 @@ h5, h3{
     cursor: copy;
     text-align: end;
     margin: 15px;
+    background-color: var(--primary-color);
 }
 
 footer{
@@ -90,6 +96,7 @@ footer{
 
 footer a{
     color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
 }
