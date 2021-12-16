@@ -20,7 +20,10 @@ let themes = {
     default: ["#ffffff", "#EEEEEE", "#ffffff", "#2C272E", "#2C272E"],
     justBlack: ["#212529", "#343a40", "#212529", "#495057", "#adb5bd"],
     retro: ["#FAEDF0", "#FABB51", "#FAEDC6", "#3E8E7E", "#121212"],
-    nord: ["#4C566A", "#2E3440", "#3B4252", "#434C5E", "#D8DEE9"]
+    nord: ["#4C566A", "#2E3440", "#3B4252", "#434C5E", "#D8DEE9"],
+    greenishDelight: ["#D3E4CD", "#ADC2A9", "#D3E4CD", "#3E8E7E", "#353535"],
+    space: ["#222831", "#00ADB5", "#222831", "#393E46", "#EEEEEE"],
+    discordDark: ["#40444b", "#36393f", "#40444d", "#2f3136", "#eaeaeb"]
 }
 
 let expression = "";
