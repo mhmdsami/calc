@@ -83,8 +83,5 @@ deleteButton.addEventListener("click", () => {
 });
 
 themeSelector.addEventListener("change", () => {
-    if(themeSelector.value == "default") setTheme(themes.default);
-    else if(themeSelector.value == "justblack") setTheme(themes.justBlack);
-    else if(themeSelector.value == "retro") setTheme(themes.retro);
-    else if(themeSelector.value == "nord") setTheme(themes.nord);
+    setTheme(themes[themeSelector.value])
 });
