@@ -2,10 +2,10 @@
 
 :root{
     --bg-color: white;
-    --primary-color: whitesmoke;
+    --primary-color: #EEEEEE;
     --primary-highlight: white;
-    --secondary-color: black;
-    --font-color: black;
+    --secondary-color: #2C272E;
+    --font-color: #2C272E;
 }
 
 *{
@@ -38,7 +38,7 @@
     margin: 0.7em;
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     height: 30%;
 }
 
