@@ -20,12 +20,12 @@ function setTheme(theme){
 }
 
 let themes = {
-    default: ["#ffffff", "#EEEEEE", "#ffffff", "#2C272E", "#2C272E", "#2C272E", "#ffffff", "#eeeeee"],
-    justBlack: ["#212529", "#343a40", "#212529", "#495057", "#adb5bd", "#343a40", "#212529", "#495057"],
-    retro: ["#FAEDF0", "#FABB51", "#FAEDC6", "#3E8E7E", "#121212", "#3E8E7E", "#FAEDF0", "#FABB51"],
-    nord: ["#4C566A", "#2E3440", "#3B4252", "#434C5E", "#D8DEE9", "#434c5e", "#2E3440", "#D8DEE9"],
-    greenishDelight: ["#D3E4CD", "#ADC2A9", "#D3E4CD", "#3E8E7E", "#353535", "#3e8e7e", "#adc2a9", "#d3e4cd"],
-    space: ["#222831", "#00ADB5", "#222831", "#393E46", "#eaeaed", "#393e46", "#00adb5", "#eaeaed"],
+    default: ["#ffffff", "#eeeeee", "#ffffff", "#2c272e", "#2c272e", "#2c272e", "#ffffff", "#eeeeee"],
+    justBlack: ["#212529", "#343a40", "#212529", "#495057", "#adb5bd", "#343a40", "#adb5bd", "#495057"],
+    retro: ["#faedf0", "#fabb51", "#faedc6", "#3e8e7e", "#121212", "#3e8e7e", "#faedf0", "#fabb51"],
+    nord: ["#4c566a", "#2e3440", "#3b4252", "#434c5e", "#d8dee9", "#2e3440", "#d8dee9", "#434c5e"],
+    greenishDelight: ["#d3e4cd", "#acd2A9", "#d3e4cd", "#3e8e7e", "#353535", "#3e8e7e", "#adc2a9", "#d3e4cd"],
+    space: ["#222831", "#00adb5", "#222831", "#393e46", "#eaeaed", "#393e46", "#00adb5", "#eaeaed"],
     discordDark: ["#40444b", "#36393f", "#40444d", "#2f3136", "#dcddde", "#36393f", "#eaeaeb", "#dcddde"]
 }
 
