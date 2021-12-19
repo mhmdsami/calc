@@ -6,6 +6,9 @@
     --primary-highlight: #ffffff;
     --secondary-color: #2C272E;
     --font-color: #2C272E;
+    --footer-bg-color: #2C272E;
+    --footer-color: #ffffff;
+    --footer-hover: #eeeeee;
 }
 
 *{
@@ -90,17 +93,17 @@ footer{
     width: 100%;
     text-align: center;
     padding: 1em;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--footer-color);
+    background-color: var(--footer-bg-color);
 }
 
 footer a{
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--footer-color);
+    background-color: var(--footer-bg-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover{
-    color: var(--primary-highlight);
+    color: var(--footer-hover);
 }
