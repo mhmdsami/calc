@@ -1,109 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root{
-    --bg-color: #ffffff;
-    --primary-color: #eeeeee;
-    --primary-highlight: #ffffff;
-    --secondary-color: #2C272E;
-    --font-color: #2C272E;
-    --footer-bg-color: #2C272E;
-    --footer-color: #ffffff;
-    --footer-hover: #eeeeee;
+:root {
+  --bg-color: #ffffff;
+  --primary-color: #eeeeee;
+  --primary-highlight: #ffffff;
+  --secondary-color: #2c272e;
+  --font-color: #2c272e;
+  --footer-bg-color: #2c272e;
+  --footer-color: #ffffff;
+  --footer-hover: #eeeeee;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--font-color);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
-.themes{
-    padding: 0.5em;
+.themes {
+  padding: 0.5em;
 }
 
-.themes select{
-    border-radius: 5px;
+.themes select {
+  border-radius: 5px;
 }
 
-.calculator{
-    text-align: center;
-    margin: 6em auto;
-    border: 1px solid balck;
-    border-radius: 10px;
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 400px;
+.calculator {
+  text-align: center;
+  margin: 6em auto;
+  border: 1px solid balck;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
 }
 
-.screen{
-    margin: 0.7em;
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
-    background-color: var(--primary-color);
-    height: 30%;
+.screen {
+  margin: 0.7em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  height: 30%;
 }
 
-.buttons{
-    padding: 0 0.5em 0.7em;
-    height: 70%;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    background-color: var(--secondary-color);
-    border-radius: 10px;
+.buttons {
+  padding: 0 0.5em 0.7em;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
 }
 
-.buttons button{
-    background-color: var(--primary-color);
-    font-weight: bold;
-    border: 1px solid var(--secondary-color);
-    font-size: large;
-    border-radius: 10px;
-    margin: 0.2em;
+.buttons button {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  border: 1px solid var(--secondary-color);
+  font-size: large;
+  border-radius: 10px;
+  margin: 0.2em;
 }
 
-.clear{
-    padding: 0.2em 0;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.clear {
+  padding: 0.2em 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-.delete{
-    grid-column-start: 3;
-    grid-column-end: 5;
+.delete {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
-.buttons button:hover{
-    background-color: var(--primary-highlight);
+.buttons button:hover {
+  background-color: var(--primary-highlight);
 }
 
-h5, h3{
-    cursor: copy;
-    text-align: end;
-    margin: 15px;
-    background-color: var(--primary-color);
+h5,
+h3 {
+  cursor: copy;
+  text-align: end;
+  margin: 15px;
+  background-color: var(--primary-color);
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    color: var(--footer-color);
-    background-color: var(--footer-bg-color);
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  color: var(--footer-color);
+  background-color: var(--footer-bg-color);
 }
 
-footer a{
-    color: var(--footer-color);
-    background-color: var(--footer-bg-color);
-    text-decoration: none;
-    font-weight: bold;
+footer a {
+  color: var(--footer-color);
+  background-color: var(--footer-bg-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-footer a:hover{
-    color: var(--footer-hover);
+footer a:hover {
+  color: var(--footer-hover);
 }
